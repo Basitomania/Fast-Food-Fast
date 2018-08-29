@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root{
     --primary: #ddd;
-    --dark: #333;
+    --dark: black;
     --light: #fff;
     --shadow: 0 1px 5px rgba(105, 105, 105, 0.8);
 }
@@ -88,12 +88,12 @@ nav a.selected, nav a:hover{
     text-transform: uppercase;
 }
 
-/*  */
+/* Top */
 .top-container{
     background: url("../img/food.jpg") 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 85vh;
     color: #fff;
 }
 
@@ -131,4 +131,64 @@ nav a.selected, nav a:hover{
 }
 img{
     width: 100%;
+}
+/* Login */
+.header{
+    text-align: center;
+    color: var(--dark);
+}
+/* Form */
+.form{
+    text-align: center;
+}
+input[type=text], input[type=password]{
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+label{
+    color: var(--dark);
+    font-weight: bold;
+}
+
+button{
+    background-color: #599a68;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+img.avatar{
+    width: 50%;
+    border-radius: 50%;
+}
+
+span a{
+    margin: 50px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.signup a{
+    text-decoration: none;
 }
