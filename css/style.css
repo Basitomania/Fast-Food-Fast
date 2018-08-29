@@ -132,7 +132,7 @@ nav a.selected, nav a:hover{
 img{
     width: 100%;
 }
-/* Login */
+/* Login Page*/
 .header{
     text-align: center;
     color: var(--dark);
@@ -187,6 +187,10 @@ span a{
     text-decoration: none;
     color: var(--dark);
     font-weight: bold;
+}
+
+.signup{
+    padding: 10px;
 }
 
 .signup a{
