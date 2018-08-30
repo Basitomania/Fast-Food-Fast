@@ -225,12 +225,10 @@ span a {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
-img {
+.card img{
     border-radius: 5px 5px 0 0;
 }
-
-img:hover {
+.card img:hover{
     filter: blur(2px);
 }
 
@@ -247,7 +245,6 @@ input[type=number] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 /* Order page */
 
 .order.row::after {
