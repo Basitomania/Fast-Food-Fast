@@ -322,3 +322,35 @@ hr {
     clear: both;
     display: table;
 }
+
+/* Admin */
+#admin-img{
+    background: #6ab47b;
+}
+
+#sidebar{
+    width: 200px;
+    height: 500px;
+    background: #599a68;
+    float: left;
+}
+
+#sidebar .row{
+    padding: 10px;
+}
+
+#main-container{
+    height: 500px;
+    background: #6ab47b;
+}
+
+#main-container .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+
+
