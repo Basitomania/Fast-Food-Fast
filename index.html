@@ -9,96 +9,102 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <header id="heading">
-        <div class="brand">
-            <h1>Food Fast Food</h1>
-        </div>
-        <!-- Navigation -->
-        <nav class="main-nav">
-            <ul>
-                <li>
-                    <a href="index.html" class="selected">Home</a>
-                </li>
-                <li>
-                    <a href="order.html">Order Online</a>
-                </li>
-                <li>
-                        <a href="menu.html">Menu</a>
-                    </li>
-                <li>
-                    <a href="book.html">Book a Slot</a>
-                </li>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <!-- <li>
-                    <a href="logout.html">Logout</a>
-                </li> -->
-                <li>
-                    <a href="cart.html">Cart</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Header Bar -->
-    <!-- <section class="column">
-            <div class="row">
-                <h1>Food Fast Food</h1>
+    <header class="heading">
+        <div class="Navbar">
+            <div class="Navbar-Link NavbarLink-brand">
+                <a href="index.html">Fast Food Fast</a>
             </div>
-        </section> -->
-    <!--  Slider images-->
-    <!-- Top container -->
-    <section class="top-container">
-        <!-- <img id="top" src="img/sweets.jpg" alt=""> -->
-        <div class="showcase">
-            <h1>Welcome To Fast Food Fast</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, atque.</p>
-            <a href="#" class="btn">Learn More</a>
+            <div class="Navbar-Link Navbar-Link-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="Navbar-Items Navbar-Items-right">
+                <div class="Navbar-Link">
+                    <a href="menu.html">Resturant</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#">Help</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#">Login/Signup</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="top-container"></div>
+    <div class="showcase">
+        <h1>Welcome To Fast Food Fast</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, atque.</p>
+        <!-- <a href="#" class="btn">Learn More</a> -->
+        <div class="search">
+            <h2>Order food now!</h2>
+            <div class="food">
+                <div class="foodinput">
+                    <input type="city" placeholder="Select city">
+                </div>
+                <div class="foodinput">
+                    <input type="area" placeholder="Select area">
+                </div>
+                <div class="foodinput">
+                    <button class="foodbtn">Show Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="operation">
+        <div class="text">
+            <h2>How it Works</h2>
+        </div>
+        <div class="iconsmain">
+            <div class="icons">
+                <i class="far fa-compass fa-3x"></i>
+                <h3>Select your food</h3>
+                <p>Browse our restuarants</p>
+            </div>
+            <div class="icons">
+                <i class="far fa-compass fa-3x"></i>
+                <h3>Select your food</h3>
+                <p>Browse our restuarants</p>
+            </div>
+            <div class="icons">
+                <i class="far fa-compass fa-3x"></i>
+                <h3>Select your food</h3>
+                <p>Browse our restuarants</p>
+            </div>
+        </div>
+    </div>
+    <!-- Food Sample -->
+    <section>
+        <div id="food">
+            <h2>Restuarants</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="https://source.unsplash.com/weekly?food/200x200" alt="">
+            </div>
+            <div class="column">
+                <img src="https://source.unsplash.com/weekly?food/201x200" alt="">
+            </div>
+            <div class="column">
+                <img src="https://source.unsplash.com/weekly?food/202x200" alt="">
+            </div>
+            <div class="column">
+                <img src="https://source.unsplash.com/weekly?food/203x200" alt="">
+            </div>
         </div>
     </section>
-    <div class="wrapper">
-        <!-- About Section -->
-        <section>
-            <div id="about">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolores temporibus voluptas rem alias id dolorem
-                    autem totam, incidunt, facilis sapiente maxime vel. Molestias, velit eligendi. Saepe quaerat vitae eos!
-                    Itaque a ipsam praesentium, corrupti pariatur saepe fuga, id ea rem eius asperiores explicabo facilis.
-                    Iste impedit tenetur eveniet aliquam.</p>
-            </div>
-        </section>
-        <!-- Food Sample -->
-        <section>
-            <div id="food">
-                <h2>Our Foods</h2>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img src="https://source.unsplash.com/weekly?food/200x200" alt="">
-                </div>
-                <div class="column">
-                    <img src="https://source.unsplash.com/weekly?food/201x200" alt="">
-                </div>
-                <div class="column">
-                    <img src="https://source.unsplash.com/weekly?food/202x200" alt="">
-                </div>
-                <div class="column">
-                    <img src="https://source.unsplash.com/weekly?food/203x200" alt="">
-                </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <p>Fast Food &copy; 2018</p>
-            <i class="fab fa-twitter fa-2x"></i>
-            <i class="fab fa-facebook-square fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
-        </footer>
+    <!-- Footer -->
+    <footer>
+        <p>Fast Food &copy; 2018</p>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+    </footer>
     </div>
-    <!-- Wrapper Ends Here -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

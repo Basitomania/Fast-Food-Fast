@@ -1,4 +1,8 @@
 /* CSS Variables */
+@font-face{
+    font-family: bass;
+    src: url(./Font/AvenirLTStd-Medium.otf)
+}
 :root {
     --primary: #ddd;
     --dark: black;
@@ -7,15 +11,13 @@
 }
 
 /* General */
-html {
-    box-sizing: border-box;
-    font-family: cursive;
-    color: var(--dark);
+*{
+    margin: 0;
+    font-family: bass;
 }
-
 body {
-    background: #ccc;
-    margin: 10px;
+    background: var(--light);
+    /* margin: 10px; */
 }
 
 .btn {
@@ -30,83 +32,84 @@ body {
     max-width: 100%;
 }
 
-/* Header */
-#heading {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #6ab47b;
-    border-bottom: 8px solid #599a68;
-}
-
-/* .wrapper{
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0;
-} */
 /* Navigation */
-nav a,
-nav a:visited {
-    color: #fff;
-}
 
-nav a.selected,
-nav a:hover {
-    color: #32673f;
-    color: #808080;
+.Navbar{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #6ab47b;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
-
-.brand {
-    float: left;
-    text-align: center;
-    padding: 10px;
-    color: #fff;
+.Navbar-Items{
+    display: flex;
 }
-
-.main-nav {
-    text-align: center;
-    padding: 40px 0 0 0;
-    margin: 5px 0 0;
+.Navbar-Link{
+    margin-right: 30px;
 }
-
-.main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.Navbar-Link-toggle{
+    display: none;
 }
-
-.main-nav li {
-    display: inline-block;
-    text-align: center;
-    padding: 0 10px 0 10px;
-}
-
-.main-nav a {
-    font-weight: 800;
-    padding: 20px 5px;
+.Navbar-Link a{
     text-decoration: none;
-    text-transform: uppercase;
+    color: white;
+}
+.Navbar-Link a:hover{
+    color: black;
 }
 
 /* Top */
 .top-container {
-    background: url("../img/food.jpg") 50% 0 repeat-y fixed;
-    background-size: cover;
+    background: url("../img/food.jpg") no-repeat ;
+    background-size: 100% 100%;
     background-position: center;
     height: 90vh;
     color: #fff;
+    filter: blur(3px);
+    z-index: -1;
 }
 
 .showcase {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    /* z-index: 1; */
 }
-
+.showcase .btn{
+    margin-top: 100px
+}
+.search{
+    padding-top: 20px;
+}
+.food{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: horizontal;
+}
+.foodinput{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.foodbtn{
+    width: 150%;
+}
+.foodinput input[type=city],
+.foodinput input[type=area] {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.iconsmain{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-around;
+}
 /* About */
 #about {
     text-align: center;
@@ -197,7 +200,7 @@ button {
     margin: 20px 0;
     border: none;
     border-radius: 10px;
-    width: 20%;
+    width: 50%;
     cursor: pointer;
 }
 
