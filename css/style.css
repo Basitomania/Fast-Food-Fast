@@ -151,7 +151,9 @@ img {
 }
 
 /* signup */
-#signup .modal-content {
+#signup .modal-content,
+#delivery .modal-content,
+#pickup .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
@@ -161,7 +163,11 @@ img {
 }
 
 #signup input[type=text],
-#signup input[type=password] {
+#signup input[type=password],
+#delivery input[type=password],
+#delivery input[type=text],
+#pickup input[type=text],
+#pickup input[type=password] {
     width: 38%;
     padding: 12px 20px;
     margin: 8px 0;
