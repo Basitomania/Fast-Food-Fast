@@ -1,5 +1,4 @@
 /* CSS Variables */
-
 :root {
     --primary: #ddd;
     --dark: black;
@@ -8,7 +7,6 @@
 }
 
 /* General */
-
 html {
     box-sizing: border-box;
     font-family: cursive;
@@ -33,7 +31,6 @@ body {
 }
 
 /* Header */
-
 #heading {
     float: left;
     margin: 0;
@@ -49,9 +46,7 @@ body {
     margin: 0 auto;
     padding: 0;
 } */
-
 /* Navigation */
-
 nav a,
 nav a:visited {
     color: #fff;
@@ -96,7 +91,6 @@ nav a:hover {
 }
 
 /* Top */
-
 .top-container {
     background: url("../img/food.jpg") 50% 0 repeat-y fixed;
     background-size: cover;
@@ -114,7 +108,6 @@ nav a:hover {
 }
 
 /* About */
-
 #about {
     text-align: center;
     margin: 0 auto;
@@ -122,7 +115,6 @@ nav a:hover {
 }
 
 /* Food */
-
 #food {
     text-align: center;
 }
@@ -144,7 +136,6 @@ img {
 }
 
 /* Login Page*/
-
 .header {
     text-align: center;
     color: var(--dark);
@@ -178,7 +169,6 @@ img {
 }
 
 /* Form */
-
 .form {
     text-align: center;
 }
@@ -242,7 +232,6 @@ span a {
 }
 
 /* Menu */
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -252,10 +241,12 @@ span a {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.card img{
+
+.card img {
     border-radius: 5px 5px 0 0;
 }
-.card img:hover{
+
+.card img:hover {
     filter: blur(2px);
 }
 
@@ -272,8 +263,8 @@ input[type=number] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-/* Order page */
 
+/* Order page */
 .order.row::after {
     content: "";
     clear: both;
@@ -288,13 +279,11 @@ input[type=number] {
 }
 
 /* Order */
-
 /* .cancelbtn,
 .continuebtn {
     float: left;
     width: 50%;
 } */
-
 #delivery .container {
     padding: 30px
 }
@@ -318,10 +307,13 @@ input[type=number] {
     border: 1px solid #888;
     width: 50%;
 }
-.modal-content h1, .modal-content p{
+
+.modal-content h1,
+.modal-content p {
     color: var(--dark);
     text-align: center;
 }
+
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
@@ -343,7 +335,6 @@ hr {
 }
 
 /* Clear floats */
-
 .clearfix::after {
     content: "";
     clear: both;
@@ -351,23 +342,35 @@ hr {
 }
 
 /* Admin */
-#admin-img{
+#admin-img {
     background: #6ab47b;
 }
 
-#sidebar{
-    width: 200px;
-    height: 500px;
-    background: #599a68;
-    float: left;
+#sidebar {
+    height: 100%;
+    width: 160px;
+    background-color: #599a68;
+    position: fixed;
+    z-index: 1;
+    padding-top: 16px;
+    overflow-x: hidden;
 }
 
-#sidebar .row{
-    padding: 10px;
+#sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
 }
 
-#main-container{
-    height: 500px;
+#sidebar a:hover {
+    color: #ccc;
+}
+
+#main-container {
+    margin-left: 160px;
+    padding: 0px 10px;
     background: #6ab47b;
 }
 
@@ -378,4 +381,5 @@ hr {
     text-align: center;
     background-color: white;
 }
+
 
