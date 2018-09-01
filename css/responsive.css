@@ -3,8 +3,17 @@
     .Navbar-Items,
     .Navbar,
     .food,
-    .iconsmain {
+    .iconsmain,
+    #foodimg {
         flex-direction: column;
+    }
+    .iconsmain,
+    #foodimg {
+        text-align: center;
+    }
+    .foodbtn,
+    #footer {
+        width: 100%;
     }
 
     .Navbar-Items {
