@@ -1,5 +1,5 @@
 @media only screen and (max-width: 480px) {
-
+    /* responsiveness for the navigation bar and footer */
     .Navbar-Items,
     .Navbar,
     .food,
@@ -31,8 +31,12 @@
 
     .Navbar-Link-toggle {
         align-self: flex-end;
-        display: block;
+        display: initial;
         position: absolute;
         cursor: pointer;
     }
+    .showcase{
+        margin-top: 40px;
+    }
+    
 }

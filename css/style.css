@@ -42,9 +42,9 @@ body {
 /*  */
 .Navbar {
     display: flex;
-    flex-direction: horizontal;
+    /* flex-direction: horizontal; */
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #6ab47b;
     padding: 20px;
     position: fixed;
@@ -192,8 +192,9 @@ body {
 
 /* signup */
 #signup .modal-content,
-#delivery .modal-content,
-#pickup .modal-content {
+/* #delivery .modal-content,
+#pickup .modal-content, */
+#login .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
@@ -204,10 +205,12 @@ body {
 
 #signup input[type=text],
 #signup input[type=password],
-#delivery input[type=password],
+/* #delivery input[type=password],
 #delivery input[type=text],
 #pickup input[type=text],
-#pickup input[type=password] {
+#pickup input[type=password], */
+#login input[type=text],
+#login input[type=password]{
     width: 38%;
     padding: 12px 20px;
     margin: 8px 0;
