@@ -137,6 +137,33 @@ body {
     text-align: center;
     margin: 40px;
 }
+/*  */
+/*  */
+/* menu */
+/*  */
+/*  */
+
+.menu{
+    padding-top: 80px;
+    padding-left: 20px;
+}
+.menudetails{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.foodtxt{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card-container{
+    padding-top: 20px;
+}
+
+.text,
+#food {
+    text-align: center;
+    margin: 40px;
+}
 
 /* About */
 #about {
@@ -201,6 +228,14 @@ body {
     width: 50%;
     padding: 20px;
     border-radius: 20px;
+}
+input[type=number]{
+    width: 58%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 #signup input[type=text],
@@ -284,7 +319,8 @@ span a {
 }
 
 /* Menu */
-.card {
+
+/* .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
@@ -297,10 +333,7 @@ span a {
 .card img {
     border-radius: 5px 5px 0 0;
 }
-
-.card img:hover {
-    filter: blur(2px);
-}
+*/
 
 .overlay {
     text-align: center;
