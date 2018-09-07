@@ -1,2 +1,2 @@
 # fast-food-fast
-[![Build Status](https://travis-ci.org/<github basitomania>/<fast-food-fast>.svg?branch=master)](https://travis-ci.org/<github basitomania>/<fast-food-fast>)
+https://travis-ci.com/Basitomania/Fast-Food-Fast.svg?branch=master
