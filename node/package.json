@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha **/app.test.js",
-    "start": "nodemon app.js --exec babel-node --"
+    "start": "nodemon app.js --exec babel-node --",
+    "coverage": "node node_modules/.bin/istanbul cover _mocha -- -R spec",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "author": "",
   "license": "ISC",
@@ -18,10 +20,12 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^4.2.0",
+    "coveralls": "^3.0.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "expect": "^23.5.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.4",
     "supertest": "^3.3.0"
