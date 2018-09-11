@@ -1,5 +1,3 @@
-/* eslint-disable
-class-methods-use-this */
 
 import db from "../db/db";
 
@@ -102,7 +100,6 @@ class OrdersController {
 			location: req.body.location || orderFound.location
 		};
 		db.splice(itemIndex, 1, newOrder);
-		// db.push(updatedOrder);
 
 		return res.status(201).send({
 			success: "true",
