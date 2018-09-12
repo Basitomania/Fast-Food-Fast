@@ -1,5 +1,6 @@
 
-import db from "../db/db";
+// import db from "../db/db";
+const db = require("../db/db");
 
 class OrdersController {
 	getAllOrders(req, res) {
@@ -128,4 +129,5 @@ class OrdersController {
 
 const orderController = new OrdersController();
 
-export default orderController;
+// export default orderController;
+module.exports = orderController;
