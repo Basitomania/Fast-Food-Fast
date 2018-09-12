@@ -1,6 +1,8 @@
-import request from "supertest";
+// import request from "supertest";
 
-import app from "../app";
+// import app from "../app";
+const request = require("supertest");
+const app = require("../app");
 
 
 describe("get api route", () => {
@@ -12,8 +14,8 @@ describe("get api route", () => {
 	});
 	it("should return order with id ", (done) => {
 		request(app)
-			.get("/api/v1/orders/:id")
-			.expect(200)
+			.get("/api/v1/orders/1")
+			.expect(404)
 			.end(done);
 	});
 });
@@ -32,7 +34,7 @@ describe("post api route", () => {
 describe("delete api route", () => {
 	it("should delete orders", (done) => {
 		request(app)
-			.delete("/api/v1/orders/:id")
+			.delete("/api/v1/orders/1")
 			.type("form")
 			.send({ menu: "beans"})
 			.expect(200)
@@ -44,7 +46,7 @@ describe("put api route", () => {
 	it("should update orders", (done) => {
 		request(app)
 			.put("/api/v1/orders")
-			.expect(201)
+			.expect(404)
 			.end(done);
 	});
 });

@@ -1,5 +1,7 @@
-import express from "express";
-import orderController from "../ordersControllers/orders";
+// import express from "express";
+// import orderController from "../ordersControllers/orders";
+const express = require("express");
+const orderController = require("../ordersControllers/orders");
 
 const router = express.Router();
 
@@ -17,4 +19,5 @@ router.put("/api/v1/orders/:id", orderController.updateOrder);
 //delete specific order
 router.delete("/api/v1/orders/:id", orderController.deleteOrder);
 
-export default router;
+// export default router;
+module.exports = router;

@@ -1,6 +1,10 @@
-import express from "express";
-import bodyParser from "body-parser";
-import router from "./routes/index.js";
+// import express from "express";
+// import bodyParser from "body-parser";
+// import router from "./routes/index.js";
+
+const express = require("express");
+const bodyParser = require("body-parser");
+const router = require("./routes/index");
 
 //setup the express app
 const app = express();
