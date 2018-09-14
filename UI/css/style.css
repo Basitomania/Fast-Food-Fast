@@ -1,0 +1,503 @@
+/* CSS Variables */
+@font-face {
+    font-family: bass;
+    src: url(../Font/AvenirLTStd-Medium.otf)
+}
+
+:root {
+    --primary: #ddd;
+    --dark: black;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(105, 105, 105, 0.8);
+}
+
+/*  */
+/*  */
+/* General */
+/*  */
+/*  */
+* {
+    margin: 0;
+    font-family: bass;
+}
+
+body {
+    background: var(--light);
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*  */
+/*  */
+/* Navigation */
+/*  */
+/*  */
+.Navbar {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #6ab47b;
+    padding: 20px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-right: -15px;
+    width: 100%;
+    z-index: 1;
+}
+
+.Navbar-Items {
+    display: flex;
+}
+
+.Navbar-Link {
+    margin-right: 30px;
+}
+
+.Navbar-Link-toggle {
+    display: none;
+}
+
+.Navbar-Link a {
+    text-decoration: none;
+    color: white;
+}
+
+.Navbar-Link a:hover {
+    color: black;
+}
+
+/* Top */
+.top-container {
+    background: url("../img/food.jpg") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 90vh;
+    color: #fff;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.showcase {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* z-index: 1; */
+}
+
+.showcase .btn {
+    margin-top: 100px
+}
+
+.search {
+    padding-top: 20px;
+}
+
+.food {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: horizontal;
+}
+
+.foodinput {
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.foodin {
+    margin-top: 9px;
+}
+
+.foodbtn {
+    width: 150%;
+}
+
+.foodinput select[type=city],
+.foodinput select[type=area] {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.iconsmain {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-around;
+}
+
+
+.text,
+#food {
+    text-align: center;
+    margin: 40px;
+}
+
+/*  */
+/*  */
+/* menu */
+/*  */
+/*  */
+.menu {
+    padding-top: 80px;
+}
+
+.menudetails {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.foodtxt {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-container {
+    padding-top: 20px;
+}
+
+.text,
+#food {
+    text-align: center;
+    margin: 40px;
+}
+
+/* About */
+#about {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Food */
+#foodimg {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+#foodimg img {
+    width: 90%;
+    height: 50%;
+}
+
+#foodimg img:hover {
+    transform: scale(1.05);
+}
+
+#footer {
+    display: flex;
+    background-color: #6ab47b;
+    padding: 15px;
+    flex-direction: horizontal;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.soc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social {
+    margin-right: 10px;
+}
+
+.copy {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Login Page*/
+.header {
+    text-align: center;
+    color: var(--dark);
+}
+
+/* signup */
+#signup .modal-content,
+#login .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+}
+#signup .container,
+#login .container {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 58%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#signup input[type=text],
+#signup input[type=password],
+#login input[type=text],
+#login input[type=password] {
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Form */
+.form {
+    text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+button {
+    background-color: #599a68;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+#foodimg button {
+    background-color: #599a68;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.9;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+img.avatar {
+    width: 50%;
+    border-radius: 50%;
+}
+
+span a {
+    margin: 50px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.signup {
+    padding: 10px;
+}
+
+.signup a {
+    text-decoration: none;
+}
+
+/* Menu */
+.overlay {
+    text-align: center;
+    transition: 0.3s all;
+}
+
+button.cart {
+    width: 40%;
+}
+
+input[type=number] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Order page */
+.order.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+}
+
+.order .column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+
+/* Order */
+/* .cancelbtn,
+.continuebtn {
+    float: left;
+    width: 50%;
+} */
+#delivery .container {
+    padding: 30px
+}
+
+/* #6ab47b */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(105, 105, 105, 0.8);
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.modal-content h1,
+.modal-content p {
+    color: var(--dark);
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Admin */
+.admin{
+    padding-top: 80px;
+}
+#admin-img {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#adminMain{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+}
+/*
+
+#sidebar {
+    height: 100%;
+    width: 160px;
+    background-color: #599a68;
+    position: fixed;
+    z-index: 1;
+    padding-top: 16px;
+    overflow-x: hidden;
+}
+
+#sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+#sidebar a:hover {
+    color: #ccc;
+}
+
+#main-container {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+#main-container .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+} */
+
+/*  */
+/* cart */
+#cart {
+    padding-top: 80px;
+}
+
+.cartAll{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
+}
+
+.cartTitle{
+    padding-bottom: 30px;
+    text-align: center;
+}
