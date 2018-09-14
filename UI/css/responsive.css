@@ -1,4 +1,5 @@
 @media only screen and (max-width: 480px) {
+
     /* responsiveness for the navigation bar and footer */
     .Navbar-Items,
     .Navbar,
@@ -7,12 +8,13 @@
     #foodimg {
         flex-direction: column;
     }
+
     .iconsmain,
     #foodimg {
         text-align: center;
     }
-    .foodbtn,
-    #footer {
+
+    .foodbtn {
         width: 100%;
     }
 
@@ -35,8 +37,20 @@
         position: absolute;
         cursor: pointer;
     }
-    .showcase{
-        margin-top: 40px;
+
+    .showcase {
+        /* padding-top: 200px; */
     }
-    
+    .search{
+        display: none;
+    }
+
+    .food{
+        display: flex;
+        flex-direction: horizontal;
+    }
+
+    #foodimg{
+        flex-direction: column;
+    }
 }
