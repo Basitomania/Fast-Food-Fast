@@ -9,64 +9,149 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="img/cook.png" />
 </head>
 
 <body>
-    <header id="heading">
-        <div class="brand">
-            <h1>Food Fast Food</h1>
+    <header class="heading">
+        <div class="Navbar">
+            <div class="Navbar-Link NavbarLink-brand">
+                <a href="index.html"> Fast Food Fast</a>
+            </div>
+            <div class="Navbar-Link Navbar-Link-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="Navbar-Items Navbar-Items-right">
+                <div class="Navbar-Link">
+                    <a href="menu.html">Resturant</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#">Help</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#" onclick="document.getElementById('signup').style.display='block'">Signup</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </nav>
         </div>
-        <!-- Navigation -->
-        <nav class="main-nav">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="order.html">Order Online</a>
-                </li>
-                <li>
-                    <a href="menu.html">Menu</a>
-                </li>
-                <li>
-                    <a href="book.html">Book a Slot</a>
-                </li>
-                <li>
-                    <a href="login.html" class="selected">Login</a>
-                </li>
-                <!-- <li>
-                    <a href="logout.html">Logout</a>
-                </li> -->
-                <li>
-                    <a href="cart.html">Cart</a>
-                </li>
-            </ul>
-        </nav>
     </header>
-    <section class="admin">
+    <div class="admin">
         <div id="admin-img">
-            <img src="" alt="avatar" class="admin-img">
-            <p>John</p>
+            <img src="" alt="avatar" class="admin-img"><br>
+            <h3>John</h3>
         </div>
-        <div id="sidebar">
-            <div class="row">
-                <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <div id="adminMain">
+            <div id="sidebar">
+                <div class="row">
+                    <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                </div>
+                <div class="row">
+                    <a href="#"><i class="fas fa-tachometer-alt"></i> Category</a>
+                </div>
+                <div class="row">
+                    <a href="#"><i class="fas fa-sort"></i> Orders</a>
+                </div>
+                <div class="row">
+                    <a href="#"><i class="far fa-compass"></i> Menu</a>
+                </div>
             </div>
-            <div class="row">
-                <a href="#"><i class="fas fa-tachometer-alt"></i> Category</a>
+            <div id="main-container">
+                <div class="top">
+                    <h2><i class="fas fa-sort"></i> Orders </h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Order(s)</th>
+                            <th>Location</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2 x Pizza, 2 x Ice Cream</td>
+                            <td>Egbeda</td>
+                            <td>&#8358; 9,000</td>
+                            <td>
+                                <div class="tableClick">
+                                    <a href="#" class="buttonSuccess">Accept</a>
+                                    <a href="#" class="buttonDanger">Reject</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2 x Pizza, 2 x Ice Cream</td>
+                            <td>Egbeda</td>
+                            <td>&#8358; 9,000</td>
+                            <td>
+                                <div class="tableClick">
+                                    <a href="#" class="buttonSuccess">Accept</a>
+                                    <a href="#" class="buttonDanger">Reject</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2 x Pizza, 2 x Ice Cream</td>
+                            <td>Egbeda</td>
+                            <td>&#8358; 9,000</td>
+                            <td>
+                                <div class="tableClick">
+                                    <a href="#" class="buttonSuccess">Accept</a>
+                                    <a href="#" class="buttonDanger">Reject</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2 x Pizza, 2 x Ice Cream</td>
+                            <td>Egbeda</td>
+                            <td>&#8358; 9,000</td>
+                            <td>
+                                <div class="tableClick">
+                                    <a href="#" class="buttonSuccess">Accept</a>
+                                    <a href="#" class="buttonDanger">Reject</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2 x Pizza, 2 x Ice Cream</td>
+                            <td>Egbeda</td>
+                            <td>&#8358; 9,000</td>
+                            <td>
+                                <div class="tableClick">
+                                    <a href="#" class="buttonSuccess">Accept</a>
+                                    <a href="#" class="buttonDanger">Reject</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>2 x Pizza, 2 x Ice Cream</td>
+                            <td>Egbeda</td>
+                            <td>&#8358; 9,000</td>
+                            <td>
+                                <div class="tableClick">
+                                    <a href="#" class="buttonSuccess">Accept</a>
+                                    <a href="#" class="buttonDanger">Reject</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="row">
-                <a href="#"><i class="fas fa-sort"></i> Orders</a>
-            </div>
-            <div class="row">
-                <a href="#"><i class="far fa-compass"></i> Menu</a>
-            </div>
-        </div>
-        <div id="main-container">
-            <div class="top">
-                <i class="fab fa-home fa-2x"> Dashboard</i>
-            </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="column">
                     <div class="card">
                         <i class="fab fa-twitter fa-2x"></i>
@@ -123,16 +208,28 @@
                         <p>20</p>
                     </div>
                 </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="copy">
+            <p>Fast Food &copy; 2018</p>
+        </div>
+        <div class="soc">
+            <div class="social">
+                <i class="fab fa-twitter fa-2x"></i>
+            </div>
+            <div class="social">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </div>
+            <div class="social">
+                <i class="fab fa-instagram fa-2x"></i>
             </div>
         </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p>Fast Food &copy; 2018</p>
-        <i class="fab fa-twitter fa-2x"></i>
-        <i class="fab fa-facebook-square fa-2x"></i>
-        <i class="fab fa-instagram fa-2x"></i>
     </footer>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
