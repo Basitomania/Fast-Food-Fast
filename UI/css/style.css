@@ -125,6 +125,7 @@ body {
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    outline: none;
 }
 
 .iconsmain {
@@ -248,6 +249,7 @@ input[type=number] {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+    outline: none;
 }
 
 #signup input[type=text],
@@ -263,6 +265,7 @@ input[type=number] {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
+    outline: none;
 }
 
 /* Form */
@@ -279,6 +282,7 @@ input[type=password] {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+    outline: none;
 }
 
 label {
@@ -296,6 +300,7 @@ button {
     border-radius: 10px;
     width: 50%;
     cursor: pointer;
+    outline: none;
 }
 
 #foodimg button {
@@ -308,6 +313,7 @@ button {
     border-radius: 10px;
     width: 90%;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -351,10 +357,11 @@ button.cart {
     width: 40%;
 }
 
-input[type=number] {
+/* input[type=number] {
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+    outline: none;
+} */
 
 /* Order page */
 .order.row::after {
@@ -500,4 +507,36 @@ hr {
 .cartTitle{
     padding-bottom: 30px;
     text-align: center;
+}
+#checkoutForm{
+    padding-top: 80px;
+    padding-left: 20px;
+}
+.checkoutTitle{
+    text-align: center;
+}
+.checkoutInput{
+    display: block;
+    text-align: center
+}
+.checkoutInput input[type=text] {
+    width: 28%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.checkoutInput button {
+    background-color: #599a68;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    width: 10%;
+    cursor: pointer;
+    outline: none;
 }
