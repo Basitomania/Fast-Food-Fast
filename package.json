@@ -20,12 +20,14 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "babel-plugin-istanbul": "^5.0.1",
     "chai": "^4.1.2",
     "coveralls": "^3.0.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "expect": "^23.5.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.4",
     "supertest": "^3.3.0"
