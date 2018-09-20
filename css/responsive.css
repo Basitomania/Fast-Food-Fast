@@ -1,16 +1,19 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 537px) {
 
     /* responsiveness for the navigation bar and footer */
     .Navbar-Items,
     .Navbar,
     .food,
     .iconsmain,
-    #foodimg {
+    #foodimg,
+        {
         flex-direction: column;
     }
 
+
     .iconsmain,
-    #foodimg {
+    #foodimg,
+        {
         text-align: center;
     }
 
@@ -29,6 +32,7 @@
     .Navbar-ToggleShow {
         display: flex;
         align-items: center;
+        flex-direction: vertical;
     }
 
     .Navbar-Link-toggle {
@@ -38,19 +42,30 @@
         cursor: pointer;
     }
 
-    .showcase {
-        /* padding-top: 200px; */
-    }
-    .search{
+    /* .showcase {
+        padding-top: 200px;
+    } */
+    .search {
         display: none;
     }
 
-    .food{
+    .food {
         display: flex;
         flex-direction: horizontal;
     }
 
-    #foodimg{
+    #foodimg {
         flex-direction: column;
     }
+
+    #signup .modal-content,
+    #login .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 85%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
 }
