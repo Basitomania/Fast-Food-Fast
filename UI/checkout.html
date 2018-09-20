@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast Food Fast</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="img/cook.png" />
+</head>
+
+<body>
+    <header class="heading">
+        <div class="Navbar">
+            <div class="Navbar-Link NavbarLink-brand">
+                <a href="index.html"> Fast Food Fast</a>
+            </div>
+            <div class="Navbar-Link Navbar-Link-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="Navbar-Items Navbar-Items-right">
+                <div class="Navbar-Link">
+                    <a href="menu.html">Resturant</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#">Help</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#" onclick="document.getElementById('login').style.display='block'">Login</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="#" onclick="document.getElementById('signup').style.display='block'">Signup</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="checkoutForm">
+        <div class="checkoutTitle">
+            <h2>Checkout</h2>
+        </div>
+        <form action="">
+            <div class="checkoutInput">
+                <label for="cardNo">Card No: </label>
+                <input type="text" placeholder="xxx xxx xxx xxx">
+            </div>
+            <div class="checkoutInput">
+                <label for="cardName">Name on Card: </label>
+                <input type="text" placeholder="Ajayi Adeniyi">
+            </div>
+            <div class="checkoutInput">
+                <label for="cardExp">Expiry Date: </label>
+                <input type="text" placeholder="MM/YY">
+            </div>
+            <div class="checkoutInput">
+                <label for="cardNo">CVC: </label>
+                <input type="text" placeholder="***">
+            </div>
+            <div class="checkoutInput">
+                <p class="terms">By clicking proceed you agree to all our <a href="#">terms and conditions.</a></p>
+            <button class="button button--primary">Pay &#8358; 7,000</button>
+            </div>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="copy">
+            <p>Fast Food &copy; 2018</p>
+        </div>
+        <div class="soc">
+            <div class="social">
+                <i class="fab fa-twitter fa-2x"></i>
+            </div>
+            <div class="social">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </div>
+            <div class="social">
+                <i class="fab fa-instagram fa-2x"></i>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
