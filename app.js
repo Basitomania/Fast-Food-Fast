@@ -1,10 +1,10 @@
-// import express from "express";
-// import bodyParser from "body-parser";
-// import router from "./routes/index.js";
+import express from "express";
+import bodyParser from "body-parser";
+import router from "./routes/index.js";
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const router = require("./routes/index");
+// const express = require("express");
+// const bodyParser = require("body-parser");
+// const router = require("./routes/index");
 
 //setup the express app
 const app = express();
@@ -18,10 +18,11 @@ app.use(
 );
 app.use(router);
 
-const PORT = 5000;
+const PORT = 4000;
 
 app.listen(PORT, () => {
 	console.log(`server running on port ${PORT}`);
 });
 
-module.exports = app;
+// module.exports = app;
+export default app;
