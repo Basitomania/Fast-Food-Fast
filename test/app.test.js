@@ -1,8 +1,8 @@
-// import request from "supertest";
+import request from "supertest";
 
-// import app from "../app";
-const request = require("supertest");
-const app = require("../app");
+import app from "../app";
+// const request = require("supertest");
+// const app = require("../app");
 
 
 describe("get api route", () => {
