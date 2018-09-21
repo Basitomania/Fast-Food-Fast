@@ -9,14 +9,12 @@ describe("get api route", () => {
 	it("should return orders", (done) => {
 		request(app)
 			.get("/api/v1/orders")
-			.expect(200)
-			.end(done);
+			.expect(200, done);
 	});
 	it("should return order with id ", (done) => {
 		request(app)
 			.get("/api/v1/orders/1")
-			.expect(404)
-			.end(done);
+			.expect(404, done);
 	});
 });
 
@@ -26,8 +24,7 @@ describe("post api route", () => {
 			.post("/api/v1/orders")
 			.type("form")
 			.send({ menu: "beans"})
-			.expect(201)
-			.end(done);
+			.expect(201, done);
 	});
 });
 
@@ -37,8 +34,7 @@ describe("delete api route", () => {
 			.delete("/api/v1/orders/1")
 			.type("form")
 			.send({ menu: "beans"})
-			.expect(200)
-			.end(done);
+			.expect(200, done);
 	});
 });
 
@@ -46,7 +42,6 @@ describe("put api route", () => {
 	it("should update orders", (done) => {
 		request(app)
 			.put("/api/v1/orders")
-			.expect(404)
-			.end(done);
+			.expect(404, done);
 	});
 });
