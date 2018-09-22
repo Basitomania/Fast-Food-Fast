@@ -13,7 +13,7 @@ describe("get api route", () => {
 	});
 	it("should return order with id ", (done) => {
 		request(app)
-			.get("/api/v1/orders/1")
+			.get("/api/v1/orders/")
 			.expect(404, done);
 	});
 });
