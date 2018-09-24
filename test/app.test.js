@@ -11,9 +11,9 @@ describe("get api route", () => {
 			.get("/api/v1/orders")
 			.expect(200, done);
 	});
-	it("should return order with id ", (done) => {
+	it("should return order with id", (done) => {
 		request(app)
-			.get("/api/v1/orders/")
+			.get("/api/v1/orders/id")
 			.expect(404, done);
 	});
 });
@@ -21,7 +21,7 @@ describe("get api route", () => {
 describe("post api route", () => {
 	it("should add orders", (done) => {
 		request(app)
-			.post("/api/v1/orders")
+			.post("/api/v1/orders/")
 			.type("form")
 			.send({ menu: "beans"})
 			.expect(201, done);

@@ -30,27 +30,27 @@ class OrdersController {
 	}
 
 	createOrder(req, res) {
-		if (!req.body.menu) {
-			return res.status(400).send({
-				success: "false",
-				message: "menu is required"
-			});
-		} else if (!req.body.restuarant) {
-			return res.status(400).send({
-				success: "false",
-				message: "restuarant is required"
-			});
-		} else if (!req.body.location) {
-			return res.status(400).send({
-				success: "false",
-				message: "location is required"
-			});
-		}
+		// if (!req.body.menu) {
+		// 	return res.status(400).send({
+		// 		success: "false",
+		// 		message: "menu is required"
+		// 	});
+		// } else if (!req.body.restuarant) {
+		// 	return res.status(400).send({
+		// 		success: "false",
+		// 		message: "restuarant is required"
+		// 	});
+		// } else if (!req.body.location) {
+		// 	return res.status(400).send({
+		// 		success: "false",
+		// 		message: "location is required"
+		// 	});
+		// }
 		const order = {
 			id: db.length + 1,
 			menu: req.body.menu,
 			restuarant: req.body.restuarant,
-			location: req.body.location
+			location: req.body.location,
 		};
 		db.push(order);
 		return res.status(201).send({
@@ -63,21 +63,22 @@ class OrdersController {
 	updateOrder(req, res) {
 		const id = parseInt(req.params.id, 10);
 		let orderFound;
-		let itemIndex;
-		let newOrder;
+		// let itemIndex;
+		// let newOrder;
 		db.map((order, index) => {
 			if (order.id === id) {
-				orderFound = order;
-				itemIndex = index;
-			}
+				order.menu = req.body.menu;
+				order.restuarant = req.body.restuarant;
+				order.location = req.body.location;
+				orderFound = true;
+			} 
 		});
 		if (!orderFound) {
 			return res.status(404).send({
 				success: "false",
 				message: "order not found"
 			});
-		}
-		if (!req.body.menu) {
+		} else if (!req.body.menu) {
 			return res.status(400).send({
 				success: "false",
 				message: "menu is required"
@@ -94,18 +95,18 @@ class OrdersController {
 			});
 		}
 
-		const updatedOrder = {
-			id: orderFound.id,
-			menu: req.body.menu || orderFound.menu,
-			restuarant: req.body.restuarant || orderFound.restuarant,
-			location: req.body.location || orderFound.location
-		};
-		db.splice(itemIndex, 1, newOrder);
+		// const updatedOrder = {
+		// 	id: orderFound.id,
+		// 	menu: req.body.menu || orderFound.menu,
+		// 	restuarant: req.body.restuarant || orderFound.restuarant,
+		// 	location: req.body.location || orderFound.location
+		// };
+		// db.splice(itemIndex, 1, newOrder);
 
 		return res.status(201).send({
 			success: "true",
 			message: "order updated successfully",
-			updatedOrder
+			// updatedOrder
 		});
 	}
 
