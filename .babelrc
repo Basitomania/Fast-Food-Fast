@@ -1,0 +1,13 @@
+{
+    "presets":[
+        [
+        "es2015",
+        {"mocha": "true"}
+        ]
+    ],
+    "env": {
+        "test": {
+            "plugins": ["istabul"]
+        }
+    }
+}
