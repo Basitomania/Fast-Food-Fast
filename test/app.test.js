@@ -21,7 +21,7 @@ describe("get api route", () => {
 describe("post api route", () => {
 	it("should add orders", (done) => {
 		request(app)
-			.post("/api/v1/orders/")
+			.post("/api/v1/orders")
 			.type("form")
 			.send({ menu: "beans"})
 			.expect(201, done);

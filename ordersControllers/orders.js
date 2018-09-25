@@ -63,9 +63,7 @@ class OrdersController {
 	updateOrder(req, res) {
 		const id = parseInt(req.params.id, 10);
 		let orderFound;
-		// let itemIndex;
-		// let newOrder;
-		db.map((order, index) => {
+		db.map((order) => {
 			if (order.id === id) {
 				order.menu = req.body.menu;
 				order.restuarant = req.body.restuarant;
@@ -94,14 +92,6 @@ class OrdersController {
 				message: "location is required"
 			});
 		}
-
-		// const updatedOrder = {
-		// 	id: orderFound.id,
-		// 	menu: req.body.menu || orderFound.menu,
-		// 	restuarant: req.body.restuarant || orderFound.restuarant,
-		// 	location: req.body.location || orderFound.location
-		// };
-		// db.splice(itemIndex, 1, newOrder);
 
 		return res.status(201).send({
 			success: "true",
