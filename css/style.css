@@ -80,7 +80,7 @@ body {
     background-position: center;
     height: 90vh;
     color: #fff;
-    filter: blur(3px);
+    filter: blur(10px);
     z-index: -1;
 }
 
@@ -91,6 +91,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     /* z-index: 1; */
+    /* color: white; */
 }
 
 .showcase .btn {
@@ -239,10 +240,10 @@ body {
 }
 #signup .container,
 #login .container {
-    text-align: center;
+    /* text-align: center; */
 }
 
-input[type=number] {
+/* input[type=number] {
     width: 58%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -250,7 +251,7 @@ input[type=number] {
     border-radius: 10px;
     box-sizing: border-box;
     outline: none;
-}
+} */
 
 #signup input[type=text],
 #signup input[type=password],
@@ -259,13 +260,18 @@ input[type=number] {
     width: 38%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: block;
+    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
-    display: block;
     margin: 0 auto;
     outline: none;
+}
+
+.clearfix{
+    margin: auto;
+    width: 50%;
+    padding-left: 10px;
 }
 
 /* Form */
@@ -307,12 +313,23 @@ button {
     background-color: #599a68;
     color: white;
     font-weight: bold;
-    padding: 14px 20px;
+    padding: 10px 10px;
     margin: 20px 0;
     border: none;
     border-radius: 10px;
-    width: 90%;
+    width: 40%;
     cursor: pointer;
+    outline: none;
+}
+
+input[type=number] {
+    width: 28%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
     outline: none;
 }
 
@@ -354,14 +371,9 @@ span a {
 }
 
 button.cart {
-    width: 40%;
+    width: 10%;
 }
 
-/* input[type=number] {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-} */
 
 /* Order page */
 .order.row::after {
