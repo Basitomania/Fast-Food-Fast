@@ -1,5 +1,6 @@
 
 import db from "../db/db";
+import users from "../db/user"
 // const db = require("../db/db");
 
 class OrdersController {
@@ -125,6 +126,30 @@ class OrdersController {
 			message: "order not found"
 		});
 	}
+
+	signIn(req, res) {
+        if(!req.body.username || !req.body.password) {
+            return res.status(400)
+                .send("You need a username and a password");
+        }
+
+        const user = users.find((u) => {
+            return u.username === req.body.username && u.password === req.body.password;
+        });
+
+        if(!user){
+            return res.status(401)
+            .send("user not found");
+        }
+
+        const token = jwt.sign({
+            sub: user.id,
+            username: user.username
+        }, "mysupersecretkey", {expiresIn: "3 hours"});
+
+        res.status(200)
+        .send({access_token: token});
+        }
 }
 
 const orderController = new OrdersController();

@@ -19,5 +19,8 @@ router.put("/api/v1/orders/:id", orderController.updateOrder);
 //delete specific order
 router.delete("/api/v1/orders/:id", orderController.deleteOrder);
 
+//login
+router.post("/login", orderController.signIn);
+
 export default router;
 // module.exports = router;

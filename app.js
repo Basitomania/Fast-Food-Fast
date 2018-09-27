@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import router from "./routes/index.js";
+import jwt from "jsonwebtoken";
 
 // const express = require("express");
 // const bodyParser = require("body-parser");
@@ -18,7 +19,7 @@ app.use(
 );
 app.use(router);
 
-const PORT = 4000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
 	console.log(`server running on port ${PORT}`);
