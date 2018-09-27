@@ -23,6 +23,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "clean-scripts": "^1.9.2",
     "coveralls": "^3.0.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
