@@ -46,6 +46,14 @@ class OrdersController {
 				message: "location is required"
 			});
 		}
+
+		if(req.body.menu === db.body.menu){
+			return res.status(409)
+			.send({
+				success: "false",
+				message: "menu already exist"
+			});
+		}
 		const order = {
 			id: db.length + 1,
 			menu: req.body.menu,
@@ -63,8 +71,8 @@ class OrdersController {
 	updateOrder(req, res) {
 		const id = parseInt(req.params.id, 10);
 		let orderFound;
-		let itemIndex;
-		let newOrder;
+		// let itemIndex;
+		// let newOrder;
 		db.map((order, index) => {
 			if (order.id === id) {
 				db.push(updatedOrder);
