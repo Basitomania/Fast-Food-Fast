@@ -357,11 +357,6 @@ button.cart {
     width: 40%;
 }
 
-/* input[type=number] {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-} */
 
 /* Order page */
 .order.row::after {
@@ -377,12 +372,6 @@ button.cart {
     padding: 10px;
 }
 
-/* Order */
-/* .cancelbtn,
-.continuebtn {
-    float: left;
-    width: 50%;
-} */
 #delivery .container {
     padding: 30px
 }

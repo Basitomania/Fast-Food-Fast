@@ -21,4 +21,3 @@ router.delete("/api/v1/orders/:id", orderController.deleteOrder);
 router.post("/login", orderController.signIn);
 
 export default router;
-// module.exports = router;

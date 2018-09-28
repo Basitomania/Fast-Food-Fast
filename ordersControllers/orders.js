@@ -100,7 +100,7 @@ class OrdersController {
 			restuarant: req.body.restuarant || orderFound.restuarant,
 			location: req.body.location || orderFound.location
 		};
-		db.splice(itemIndex, 1, newOrder);
+		// db.splice(itemIndex, 1, newOrder);
 
 		return res.status(201).send({
 			success: "true",
@@ -147,7 +147,11 @@ class OrdersController {
         }, "mysecretkey", {expiresIn: "2 hours"});
 
         res.status(200)
-        .send({access_token: token});
+        .send({
+			success: "True",
+			message: "Token generated succesfully",
+			access_token: token
+		});
         }
 }
 
