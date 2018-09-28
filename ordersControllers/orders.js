@@ -45,15 +45,8 @@ class OrdersController {
 				success: "false",
 				message: "location is required"
 			});
-		}
+		} 
 
-		if(req.body.menu === db.body.menu){
-			return res.status(409)
-			.send({
-				success: "false",
-				message: "menu already exist"
-			});
-		}
 		const order = {
 			id: db.length + 1,
 			menu: req.body.menu,
@@ -71,8 +64,8 @@ class OrdersController {
 	updateOrder(req, res) {
 		const id = parseInt(req.params.id, 10);
 		let orderFound;
-		// let itemIndex;
-		// let newOrder;
+		let itemIndex;
+		let newOrder;
 		db.map((order, index) => {
 			if (order.id === id) {
 				db.push(updatedOrder);
@@ -107,7 +100,7 @@ class OrdersController {
 			restuarant: req.body.restuarant || orderFound.restuarant,
 			location: req.body.location || orderFound.location
 		};
-		// db.splice(itemIndex, 1, newOrder);
+		db.splice(itemIndex, 1, newOrder);
 
 		return res.status(201).send({
 			success: "true",
