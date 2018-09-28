@@ -1,5 +1,5 @@
 # fast-food-fast
-[![Build Status](https://travis-ci.com/Basitomania/Fast-Food-Fast.svg?branch=develop)](https://travis-ci.com/Basitomania/Fast-Food-Fast)
+[![Build Status](https://travis-ci.com/Basitomania/Fast-Food-Fast.svg?branch=master)](https://travis-ci.com/Basitomania/Fast-Food-Fast)
 
 [![Coverage Status](https://coveralls.io/repos/github/Basitomania/Fast-Food-Fast/badge.svg)](https://coveralls.io/github/Basitomania/Fast-Food-Fast)
 
