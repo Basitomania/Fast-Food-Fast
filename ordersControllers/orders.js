@@ -1,7 +1,6 @@
-
 import db from "../db/db";
-import users from "../db/user"
-// const db = require("../db/db");
+import users from "../db/user";
+import jwt from "jsonwebtoken";
 
 class OrdersController {
 	getAllOrders(req, res) {
@@ -68,8 +67,7 @@ class OrdersController {
 		let newOrder;
 		db.map((order, index) => {
 			if (order.id === id) {
-				orderFound = order;
-				itemIndex = index;
+				db.push(updatedOrder);
 			}
 		});
 		if (!orderFound) {
@@ -101,7 +99,7 @@ class OrdersController {
 			restuarant: req.body.restuarant || orderFound.restuarant,
 			location: req.body.location || orderFound.location
 		};
-		db.splice(itemIndex, 1, newOrder);
+		// db.splice(itemIndex, 1, newOrder);
 
 		return res.status(201).send({
 			success: "true",
@@ -145,7 +143,7 @@ class OrdersController {
         const token = jwt.sign({
             sub: user.id,
             username: user.username
-        }, "mysupersecretkey", {expiresIn: "3 hours"});
+        }, "mysecretkey", {expiresIn: "2 hours"});
 
         res.status(200)
         .send({access_token: token});

@@ -1,9 +1,5 @@
 import request from "supertest";
-
 import app from "../app";
-// const request = require("supertest");
-// const app = require("../app");
-
 
 describe("get api route", () => {
 	it("should return orders", (done) => {
@@ -14,7 +10,7 @@ describe("get api route", () => {
 	});
 	it("should return order with id ", (done) => {
 		request(app)
-			.get("/api/v1/orders/1")
+			.get("/api/v1/orders/id")
 			.expect(404)
 			.end(done);
 	});
@@ -23,8 +19,7 @@ describe("get api route", () => {
 describe("post api route", () => {
 	it("should add orders", (done) => {
 		request(app)
-			.post("/api/v1/orders")
-			.type("form")
+			.post("/api/v1/orders/")
 			.send({ menu: "beans"})
 			.expect(201)
 			.end(done);
@@ -35,7 +30,6 @@ describe("delete api route", () => {
 	it("should delete orders", (done) => {
 		request(app)
 			.delete("/api/v1/orders/1")
-			.type("form")
 			.send({ menu: "beans"})
 			.expect(200)
 			.end(done);
@@ -48,5 +42,18 @@ describe("put api route", () => {
 			.put("/api/v1/orders")
 			.expect(404)
 			.end(done);
+	});
+});
+
+describe("login route", () => {
+	it("should give login access", (done) => {
+		request(app)
+		.post("/login")
+		.send({
+			"username": "admin",
+			"password": "admin"
+		})
+		.expect(200)
+		.end(done);
 	});
 });
